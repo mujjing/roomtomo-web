@@ -15,9 +15,9 @@
             <img src="../images/sumitomo_logo.png" alt="logo" class="logo_img">
             <h2>sumitomo</h2>
                 <ul>
-                    <li><a href="#"><i class ="fas fa-home"></i>ホーム</a></li>
+                    <li><a href="/home"><i class ="fas fa-home"></i>ホーム</a></li>
                     <li><a href="#"><i class ="fas fa-address-card"></i>Sumitomo紹介</a></li>
-                    <li><a href="#"><i class ="fas fa-address-book"></i>お問い合わせ</a></li>
+                    <li><a href="{{ route('contact.show') }}"><i class ="fas fa-address-book"></i>お問い合わせ</a></li>
                 </ul>
                 <div class="search_group">
                     <div class="search_buttons">
