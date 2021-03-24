@@ -23,6 +23,7 @@ class CreateTable extends Migration
             $table->string('room_py', 255);
             $table->string('address', 255);
             $table->timestamps();
+            $table->softDeletes();
         });
 
         Schema::create('room_condition', function (Blueprint $table) {
@@ -30,6 +31,7 @@ class CreateTable extends Migration
             $table->bigInteger('room_id');
             $table->string('condition', 255);
             $table->timestamps();
+            $table->softDeletes();
         });
 
         Schema::create('favoriate', function (Blueprint $table) {
@@ -37,14 +39,17 @@ class CreateTable extends Migration
             $table->bigInteger('user_id');
             $table->bigInteger('room_id');
             $table->timestamps();
+            $table->softDeletes();
         });
 
         Schema::create('contact', function (Blueprint $table) {
             $table->bigIncrements('contact_id');
             $table->bigInteger('user_id');
             $table->string('title', 255);
-            $table->string('content', 255);
+            $table->string('content', 500);
+            $table->dateTime('application_at');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

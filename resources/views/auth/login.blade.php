@@ -56,12 +56,6 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('ログイン') }}
                                 </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('パスワードを忘れましたか?') }}
-                                    </a>
-                                @endif
                                 </form>
                                 <button onclick="goBack()" class="btn btn-danger">戻る</button>
                             </div>
