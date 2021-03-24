@@ -15,6 +15,7 @@ class CreateTable extends Migration
     {
         Schema::create('room', function (Blueprint $table) {
             $table->bigIncrements('room_id');
+            $table->text('roomImg_url');
             $table->string('region', 255);
             $table->string('station', 255);
             $table->string('train', 255);

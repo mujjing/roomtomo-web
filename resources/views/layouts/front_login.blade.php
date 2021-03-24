@@ -29,8 +29,10 @@
                 </div>
                 <div class="sign_in">
                     <div class="login_buttons">
-                        <a href="{{ route('login') }}"><img src="../images/login.png" alt="login" class="login_img"></a>
-                        <a href="{{ route('register') }}"><img src="../images/join.png" alt="join" class="join_img"></a>
+                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><img src="../images/logout.png" alt="login" class="login_img"></a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
                     </div>
                 </div>
                 <div class="social_media">
