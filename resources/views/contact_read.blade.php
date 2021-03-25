@@ -10,17 +10,21 @@
                 <div class="form-group">
                     <label for="title" name="title">タイトル</label>
                     <br>
-                    <p>{{ $data->title }}</p>
+                    <p class="form-control">{{ $data->title }}</p>
                 </div>
 
                 <div class="form-group">
                     <label for="content" name="content">内容</label>
                     <br>
-                    <p>{{ $data->content }}</p>
+                    <p class="form-control">{{ $data->content }}</p>
                 </div>
                 <div class="form-group">
+                @if ($userID == $data->user_id)
                     <a href="{{ route('contact.update.show' , $data->contact_id) }}" class="btn btn-primary">修正する</a>
                     <a href="{{ route('contact.show') }}" class="btn btn-danger">戻る</a>
+                @else 
+                    <a href="{{ route('contact.show') }}" class="btn btn-danger">戻る</a>
+                @endif
                 </div>
                 @endforeach
             </div>

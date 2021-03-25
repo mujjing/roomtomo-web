@@ -52,7 +52,8 @@ class ContactController extends Controller
     public function read($id)
     {
         $contactData = $this->contactLogic->getContent($id);
-        return view('contact_read', compact('contactData'));
+        $userID = auth()->user()->id;
+        return view('contact_read', compact('contactData', 'userID'));
     }
 
     public function contactUpdate($id)
