@@ -16,12 +16,16 @@ class CreateTable extends Migration
         Schema::create('room', function (Blueprint $table) {
             $table->bigIncrements('room_id');
             $table->text('roomImg_url');
-            $table->string('region', 255);
+            $table->string('prefecture', 255);
+            $table->string('city', 255);
             $table->string('station', 255);
-            $table->string('train', 255);
+            $table->string('train1', 255);
+            $table->string('train2', 255)->nullable();
+            $table->string('train3', 255)->nullable();
             $table->string('room_name', 255);
             $table->string('room_py', 255);
-            $table->string('address', 255);
+            $table->string('type', 255);
+            $table->string('price', 255);
             $table->timestamps();
             $table->softDeletes();
         });
