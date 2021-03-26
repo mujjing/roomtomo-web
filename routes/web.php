@@ -20,3 +20,5 @@ Route::post('/contact/create', 'ContactController@create')->name('contact.create
 Route::get('/contact/{id}', 'ContactController@read')->name('contact.read');
 Route::get('/contact/update/{id}', 'ContactController@contactUpdate')->name('contact.update.show');
 Route::post('/contact/update/{id}', 'ContactController@update')->name('contact.update');
+
+Route::get('/search', 'SearchController@show')->name('search.show');

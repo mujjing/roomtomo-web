@@ -10,14 +10,14 @@
 </head>
 <body>
 
-    <div class="wrapper">
+<div class="wrapper">
         <div class="sidebar">
             <img src="../images/sumitomo_logo.png" alt="logo" class="logo_img">
             <h2>sumitomo</h2>
                 <ul>
-                    <li><a href="#"><i class ="fas fa-home"></i>ホーム</a></li>
+                    <li><a href="/"><i class ="fas fa-home"></i>ホーム</a></li>
                     <li><a href="#"><i class ="fas fa-address-card"></i>Sumitomo紹介</a></li>
-                    <li><a href="#"><i class ="fas fa-address-book"></i>お問い合わせ</a></li>
+                    <li><a href="{{ route('contact.show') }}"><i class ="fas fa-address-book"></i>お問い合わせ</a></li>
                 </ul>
                 <div class="search_group">
                     <div class="search_buttons">
@@ -29,8 +29,8 @@
                 </div>
                 <div class="sign_in">
                     <div class="login_buttons">
-                        <a href="#"><img src="../images/login.png" alt="login" class="login_img"></a>
-                        <a href="#"><img src="../images/join.png" alt="join" class="join_img"></a>
+                        <a href="{{ route('login') }}"><img src="../images/login.png" alt="login" class="login_img"></a>
+                        <a href="{{ route('register') }}"><img src="../images/join.png" alt="join" class="join_img"></a>
                     </div>
                 </div>
                 <div class="social_media">

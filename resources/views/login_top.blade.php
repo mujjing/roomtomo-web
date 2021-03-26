@@ -6,6 +6,6 @@
         <br><br><br>
         <img src="../images/mainTitle.png" alt="main_title" class="main_title">
         <br><br><br>
-        <a href="#"><img src="../images/search.jpg" alt="search" class="home_search"></a>
+        <a href="/search"><img src="../images/search.jpg" alt="search" class="home_search"></a>
     </div>
 @endsection
