@@ -11,6 +11,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        DB::beginTransaction();
+        try {
+            $this->call([
+                RoomSeeder::class
+            ]);
+            DB::commit();
+        } catch (Exception $e) {
+            DB::rollback();
+            print_r("ERROR!".$e->getMessage().':'.$e->getLine()."\n");
+        }
     }
 }
