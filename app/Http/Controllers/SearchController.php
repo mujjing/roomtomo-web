@@ -13,10 +13,16 @@ class SearchController extends Controller
 
     public function show()
     {
-        if(auth()->user() == null) {
-            return view('search.guest.search');
-        } else {
-            return view('search.login.search');
-        }
+        return view('search.search');
+    }
+
+    public function area()
+    {
+        return view('search.search_area');
+    }
+
+    public function station()
+    {
+        return view('search.search_station');
     }
 }

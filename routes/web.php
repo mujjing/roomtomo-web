@@ -22,3 +22,5 @@ Route::get('/contact/update/{id}', 'ContactController@contactUpdate')->name('con
 Route::post('/contact/update/{id}', 'ContactController@update')->name('contact.update');
 
 Route::get('/search', 'SearchController@show')->name('search.show');
+Route::get('/search/area', 'SearchController@area')->name('search.area');
+Route::get('/search/station', 'SearchController@station')->name('search.station');
