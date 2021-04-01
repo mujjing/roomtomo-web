@@ -7,8 +7,9 @@ use App\Http\Controllers\Controller;
 
 class SearchController extends Controller
 {
-    public function __construct()
+    public function __construct(SearchLogic $searchLogic)
     {
+        $this->searchLogic = $searchLogic;
     }
 
     public function show()

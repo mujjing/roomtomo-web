@@ -30,14 +30,18 @@ class Room extends Model
      */
     protected $fillable = [
         'roomImg_url',
-        'region',
+        'prefecture',
+        'city',
         'station',
-        'train',
+        'train1',
+        'train2',
+        'train3',
         'room_name',
         'room_py',
-        'address',
+        'type',
+        'price',
     ];
-
+    
     protected $dates = [
     ];
 
