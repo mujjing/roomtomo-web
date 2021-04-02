@@ -16,4 +16,9 @@ class SearchLogic
     {
         return $this->search_repo->getQuery();
     }
+
+    public function getSearchFromArea($data)
+    {
+        return $this->search_repo->getSearchFromArea($data);
+    }
 }

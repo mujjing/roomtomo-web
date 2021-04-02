@@ -7,7 +7,7 @@
         電車の種類選択<br>
         <ul>
         @foreach ($RoomConst::TRAIN as $key => $value)
-            <li><a href="#">{{$value}}</a></li>
+            <li><a href="{{ $key }}">{{$value}}</a></li>
         @endforeach
         </ul>
     </div>

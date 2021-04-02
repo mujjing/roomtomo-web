@@ -24,3 +24,8 @@ Route::post('/contact/update/{id}', 'ContactController@update')->name('contact.u
 Route::get('/search', 'SearchController@show')->name('search.show');
 Route::get('/search/area', 'SearchController@area')->name('search.area');
 Route::get('/search/station', 'SearchController@station')->name('search.station');
+Route::get('/search/train/tokaido', 'SearchController@tokaido')->name('search.train.tokaido');
+Route::get('/search/train/keihintohoku', 'SearchController@keihintohoku')->name('search.train.keihintohoku');
+Route::get('/search/train/yamanote', 'SearchController@yamanote')->name('search.train.yamanote');
+
+Route::post('/search/area', 'SearchController@areaList')->name('search.area.post');

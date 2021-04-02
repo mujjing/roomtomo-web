@@ -19,4 +19,11 @@ class SearchRepository extends BaseRepository
         return $query;
     }
 
+    public function getSearchFromArea($data)
+    {
+        $query = $this->model->query()
+            ->whereIn('city', $data)
+            ->get();
+        return $query;
+    }
 }
