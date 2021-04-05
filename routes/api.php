@@ -19,4 +19,7 @@ Route::post('/login', 'Api\AuthController@login');
 Route::middleware('auth:api')->group(function() {
     Route::get('/logout', 'Api\AuthController@logout');
     Route::get('/user', 'Api\AuthController@user');
+    Route::get('/contact/all', 'Api\ContactController@getContact');
+    Route::post('/contact/add', 'Api\ContactController@addContact');
+    Route::put('/contact/update/{id}', 'Api\ContactController@updateContact');
 });

@@ -32,6 +32,7 @@ class Contact extends Model
         'user_id',
         'title',
         'content',
+        'application_at'
     ];
 
     protected $dates = [
