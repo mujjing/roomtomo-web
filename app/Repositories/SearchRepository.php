@@ -26,4 +26,12 @@ class SearchRepository extends BaseRepository
             ->get();
         return $query;
     }
+
+    public function getSearchFromStation($data)
+    {
+        $query = $this->model->query()
+            ->whereIn('station', $data)
+            ->get();
+        return $query;
+    }
 }

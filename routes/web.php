@@ -29,3 +29,7 @@ Route::get('/search/train/keihintohoku', 'SearchController@keihintohoku')->name(
 Route::get('/search/train/yamanote', 'SearchController@yamanote')->name('search.train.yamanote');
 
 Route::post('/search/area', 'SearchController@areaList')->name('search.area.post');
+Route::post('/search/area/favoriate', 'SearchController@favoriate')->name('search.area.favoriate');
+Route::get('/search/areaList', 'SearchController@areaList')->name('search.areaList');
+
+Route::post('/search/train', 'SearchController@trainList')->name('search.train.post');
