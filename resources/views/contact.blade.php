@@ -17,6 +17,7 @@
                         <tr>
                             <th style="text-align:center;">ID</th>
                             <th style="text-align:center;">タイトル</th>
+                            <th style="text-align:center;">作成者</th>
                             <th style="text-align:center;">作成日時</th>
                         </tr>
                         @if($contactData != null)
@@ -24,6 +25,7 @@
                         <tr>
                             <td>{{ $data->contact_id }}</td>
                             <td><a href="{{route('contact.read', $data->contact_id)}}">{{ $data->title }}</a></td>
+                            <td>{{ $data->name }}</td>
                             <td>{{ $data->application_at }}</td>
                         </tr>
                             @endforeach

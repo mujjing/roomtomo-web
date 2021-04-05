@@ -5,36 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/571aadaefb.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/sidemenu_style.css">
+    <link rel="stylesheet" href="{{ asset('css/sidemenu_style.css') }}">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    table tr th {
+        text-align:center;
+    }
+    table tr td {
+        text-align:center;
+    }
+    </style>
     <title>@yield('title')</title>
 </head>
 <body>
 
     <div class="wrapper">
         <div class="sidebar">
-            <img src="../images/sumitomo_logo.png" alt="logo" class="logo_img">
+            <img src="{{ asset('images/sumitomo_logo.png') }}" alt="logo" class="logo_img">
             <h2 class="h2_title">sumitomo</h2>
                 <ul class="ul_contact">
+                @if (auth()->user() == null)
+                <li><a href="/"><i class ="fas fa-home"></i>ホーム</a></li>
+                @else
                     <li><a href="/home"><i class ="fas fa-home"></i>ホーム</a></li>
+                @endif
                     <li><a href="#"><i class ="fas fa-address-card"></i>Sumitomo紹介</a></li>
                     <li><a href="{{ route('contact.show') }}"><i class ="fas fa-address-book"></i>お問い合わせ</a></li>
                 </ul>
                 <div class="search_group">
                     <div class="search_buttons">
-                        <a href="#"><img src="../images/area.png" alt="エリアから探す" class="search_img1"></a>
+                        <a href="{{ route('search.area') }}"><img src="{{ asset('images/area.png') }}" alt="エリアから探す" class="search_img1"></a>
                     </div>
                     <div class="search_buttons">
-                        <a href="#"><img src="../images/station.png" alt="エリアから探す" class="search_img2"></a>
+                        <a href="{{ route('search.station') }}"><img src="{{ asset('images/station.png') }}" alt="エリアから探す" class="search_img2"></a>
                     </div>
                 </div>
                 <div class="sign_in">
                     <div class="login_buttons">
-                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><img src="../images/logout.png" alt="login" class="login_img"></a>
+                    @if (auth()->user() == null)
+                        <a href="{{ route('login') }}"><img src="{{ asset('images/login.png') }}" alt="login" class="login_img"></a>
+                        <a href="{{ route('register') }}"><img src="{{ asset('images/join.png') }}" alt="join" class="join_img"></a>
+                        @else
+                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><img src="{{ asset('images/logout.png') }}" alt="logout" class="login_img"></a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>
+                        @endif
                     </div>
                 </div>
                 <div class="social_media">

@@ -20,3 +20,16 @@ Route::post('/contact/create', 'ContactController@create')->name('contact.create
 Route::get('/contact/{id}', 'ContactController@read')->name('contact.read');
 Route::get('/contact/update/{id}', 'ContactController@contactUpdate')->name('contact.update.show');
 Route::post('/contact/update/{id}', 'ContactController@update')->name('contact.update');
+
+Route::get('/search', 'SearchController@show')->name('search.show');
+Route::get('/search/area', 'SearchController@area')->name('search.area');
+Route::get('/search/station', 'SearchController@station')->name('search.station');
+Route::get('/search/train/tokaido', 'SearchController@tokaido')->name('search.train.tokaido');
+Route::get('/search/train/keihintohoku', 'SearchController@keihintohoku')->name('search.train.keihintohoku');
+Route::get('/search/train/yamanote', 'SearchController@yamanote')->name('search.train.yamanote');
+
+Route::post('/search/area', 'SearchController@areaList')->name('search.area.post');
+Route::post('/search/area/favoriate', 'SearchController@favoriate')->name('search.area.favoriate');
+Route::get('/search/areaList', 'SearchController@areaList')->name('search.areaList');
+
+Route::post('/search/train', 'SearchController@trainList')->name('search.train.post');

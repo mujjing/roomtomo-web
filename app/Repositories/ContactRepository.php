@@ -15,7 +15,9 @@ class ContactRepository extends BaseRepository
 
     public function getQuery()
     {
-        $query = $this->model->query()->get();
+        $query = $this->model->query()
+        ->leftJoin('users', 'users.id', '=', 'contact.user_id')
+        ->get();
         return $query;
     }
 

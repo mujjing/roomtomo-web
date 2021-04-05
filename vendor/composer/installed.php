@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'v5.7.28',
-    'version' => '5.7.28.0',
+    'pretty_version' => 'dev-develop',
+    'version' => 'dev-develop',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '55c3770177d9f1a208f435e3608084f70d0b35a5',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -33,6 +33,15 @@
       array (
         0 => '*',
       ),
+    ),
+    'defuse/php-encryption' => 
+    array (
+      'pretty_version' => 'v2.2.1',
+      'version' => '2.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '0f407c43b953d571421e0020ba92082ed5fb7620',
     ),
     'dnoegel/php-xdg-base-dir' => 
     array (
@@ -114,6 +123,15 @@
       array (
       ),
       'reference' => 'f6e14679f948d8a5cfb866fa7065a30c66bd64d3',
+    ),
+    'firebase/php-jwt' => 
+    array (
+      'pretty_version' => 'v5.2.1',
+      'version' => '5.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f42c9110abe98dd6cfe9053c49bc86acc70b2d23',
     ),
     'fzaninotto/faker' => 
     array (
@@ -401,12 +419,12 @@
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => 'v5.7.28',
-      'version' => '5.7.28.0',
+      'pretty_version' => 'dev-develop',
+      'version' => 'dev-develop',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '55c3770177d9f1a208f435e3608084f70d0b35a5',
     ),
     'laravel/nexmo-notification-channel' => 
     array (
@@ -416,6 +434,15 @@
       array (
       ),
       'reference' => '03edd42a55b306ff980c9950899d5a2b03260d48',
+    ),
+    'laravel/passport' => 
+    array (
+      'pretty_version' => 'v7.5.1',
+      'version' => '7.5.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd63cdd672c3d65b3c35b73d0ef13a9dbfcb71c08',
     ),
     'laravel/slack-notification-channel' => 
     array (
@@ -437,12 +464,21 @@
     ),
     'lcobucci/jwt' => 
     array (
-      'pretty_version' => '3.4.5',
-      'version' => '3.4.5.0',
+      'pretty_version' => '3.3.3',
+      'version' => '3.3.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '511629a54465e89a31d3d7e4cf0935feab8b14c1',
+      'reference' => 'c1123697f6a2ec29162b82f170dd4a491f524773',
+    ),
+    'league/event' => 
+    array (
+      'pretty_version' => '2.2.0',
+      'version' => '2.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd2cc124cf9a3fab2bb4ff963307f60361ce4d119',
     ),
     'league/flysystem' => 
     array (
@@ -461,6 +497,29 @@
       array (
       ),
       'reference' => '3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3',
+    ),
+    'league/oauth2-server' => 
+    array (
+      'pretty_version' => '7.4.0',
+      'version' => '7.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2eb1cf79e59d807d89c256e7ac5e2bf8bdbd4acf',
+    ),
+    'league/oauth2server' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '*',
+      ),
+    ),
+    'lncd/oauth2' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '*',
+      ),
     ),
     'mockery/mockery' => 
     array (
@@ -642,6 +701,15 @@
       ),
       'reference' => '6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0',
     ),
+    'phpseclib/phpseclib' => 
+    array (
+      'pretty_version' => '2.0.30',
+      'version' => '2.0.30.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '136b9ca7eebef78be14abf90d65c5e57b6bc5d36',
+    ),
     'phpspec/prophecy' => 
     array (
       'pretty_version' => '1.13.0',
@@ -766,8 +834,8 @@
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '1.0.0',
+        0 => '1.0.0',
+        1 => '1.0',
       ),
     ),
     'psr/simple-cache' => 
@@ -1116,6 +1184,15 @@
       array (
       ),
       'reference' => '7e950b6366d4da90292c2e7fa820b3c1842b965a',
+    ),
+    'symfony/psr-http-message-bridge' => 
+    array (
+      'pretty_version' => 'v1.3.0',
+      'version' => '1.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9d3e80d54d9ae747ad573cad796e8e247df7b796',
     ),
     'symfony/routing' => 
     array (
