@@ -24,14 +24,14 @@
     <div class="wrapper">
         <div class="sidebar">
             <img src="{{ asset('images/sumitomo_logo.png') }}" alt="logo" class="logo_img">
-            <h2 class="h2_title">sumitomo</h2>
+            <h2 class="h2_title">Roomtomo</h2>
                 <ul class="ul_contact">
                 @if (auth()->user() == null)
                 <li><a href="/"><i class ="fas fa-home"></i>ホーム</a></li>
                 @else
                     <li><a href="/home"><i class ="fas fa-home"></i>ホーム</a></li>
                 @endif
-                    <li><a href="#"><i class ="fas fa-address-card"></i>Sumitomo紹介</a></li>
+                    <li><a href="#"><i class ="fas fa-address-card"></i>Roomtomo紹介</a></li>
                     <li><a href="{{ route('contact.show') }}"><i class ="fas fa-address-book"></i>お問い合わせ</a></li>
                 </ul>
                 <div class="search_group">

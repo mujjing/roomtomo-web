@@ -1,6 +1,6 @@
 @extends('layouts.front_side')
 @inject('RoomConst', 'App\Consts\RoomConst')
-@section('title', 'Sumitomo_search')
+@section('title', 'Roomtomo_search')
 @section('content')
 
 <h3>検索結果は {{count($list)}}件です。</h3>

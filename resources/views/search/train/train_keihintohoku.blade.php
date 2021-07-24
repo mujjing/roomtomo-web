@@ -1,6 +1,6 @@
 @extends('layouts.front_side')
 @inject('RoomConst', 'App\Consts\RoomConst')
-@section('title', 'Sumitomo_search_area')
+@section('title', 'Roomtomo_search_area')
 @section('content')
 역이름으로 찾기
 <form action="{{ route('search.area.post') }}" name="form" method="POST">

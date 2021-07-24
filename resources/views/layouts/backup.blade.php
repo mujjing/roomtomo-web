@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/571aadaefb.js"></script>
     <link rel="stylesheet" href="../css/styles.css">
-    <title>sumitomo</title>
+    <title>Roomtomo</title>
 </head>
 <body>
 
     <div class="wrapper">
         <div class="sidebar">
             <img src="../images/sumitomo_logo.png" alt="logo" class="logo_img">
-            <h2>sumitomo</h2>
+            <h2>Roomtomo</h2>
                 <ul>
                     <li><a href="#"><i class ="fas fa-home"></i>ホーム</a></li>
-                    <li><a href="#"><i class ="fas fa-address-card"></i>Sumitomo紹介</a></li>
+                    <li><a href="#"><i class ="fas fa-address-card"></i>Roomtomo紹介</a></li>
                     <li><a href="#"><i class ="fas fa-address-book"></i>お問い合わせ</a></li>
                 </ul>
                 <div class="search_group">

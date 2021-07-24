@@ -1,5 +1,5 @@
 @extends('layouts.front_side')
-@section('title', 'Sumitomo_search')
+@section('title', 'Roomtomo_search')
 @section('content')
 
 

@@ -1,5 +1,5 @@
 @extends('layouts.front_top')
-@section('title', 'Sumitomo')
+@section('title', 'Roomtomo')
 @section('content')
     <div class="home_header">
         <h2>部屋探しはここで！</h2>

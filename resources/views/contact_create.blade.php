@@ -1,5 +1,5 @@
 @extends('layouts.front_side')
-@section('title', 'Sumitomo_contact')
+@section('title', 'Roomtomo_contact')
 @section('content')
         <div class="header">
             お問い合わせ

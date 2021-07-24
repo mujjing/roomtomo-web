@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/sidemenu_style.css') }}">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Sumitomo_contact</title>
+    <title>Roomtomo_contact</title>
 </head>
 <body>
 
     <div class="wrapper">
         <div class="sidebar">
             <img src="{{ asset('images/sumitomo_logo.png') }}" alt="logo" class="logo_img">
-            <h2 class="h2_title">sumitomo</h2>
+            <h2 class="h2_title">Roomtomo</h2>
                 <ul class="ul_contact">
                     <li><a href="/home"><i class ="fas fa-home"></i>ホーム</a></li>
-                    <li><a href="#"><i class ="fas fa-address-card"></i>Sumitomo紹介</a></li>
+                    <li><a href="#"><i class ="fas fa-address-card"></i>Roomtomo紹介</a></li>
                     <li><a href="{{ route('contact.show') }}"><i class ="fas fa-address-book"></i>お問い合わせ</a></li>
                 </ul>
                 <div class="search_group">

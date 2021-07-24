@@ -1,6 +1,6 @@
 @extends('layouts.front_side')
 @inject('RoomConst', 'App\Consts\RoomConst')
-@section('title', 'Sumitomo_search_station')
+@section('title', 'Roomtomo_search_station')
 @section('content')
 
     <div class="train_list">
